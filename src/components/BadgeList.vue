@@ -1,7 +1,7 @@
 <template>
   <section>
     <base-card>
-      <template v-slot:header>
+      <template #header>
         <h2>Available Badges</h2>
       </template>
       <template v-slot:default>
@@ -19,20 +19,16 @@
 </template>
 
 <script>
-
-import BaseBadge from './BaseBadge.vue'
+import BaseBadge from "./BaseBadge.vue";
 
 export default {
-
-  
   components: {
-    'base-badge': BaseBadge
-  }
-}
+    "base-badge": BaseBadge,
+  },
+};
 </script>
 
 <style scoped>
-
 section {
   margin: 2rem auto;
   max-width: 30rem;
